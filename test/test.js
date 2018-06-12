@@ -5,7 +5,7 @@
 const chai = require('chai')
 const expect = chai.expect
 const path = require('path')
-const tymly = require('tymly')
+const tymly = require('@wmfs/tymly')
 const process = require('process')
 const sqlScriptRunner = require('./fixtures/sql-script-runner.js')
 
@@ -27,7 +27,7 @@ describe('CQC tests', function () {
     tymly.boot(
       {
         pluginPaths: [
-          require.resolve('tymly-pg-plugin'),
+          require.resolve('@wmfs/tymly-pg-plugin'),
           path.resolve(__dirname, '../node_modules/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
         ],
         blueprintPaths: [
