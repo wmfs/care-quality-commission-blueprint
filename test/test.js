@@ -28,7 +28,7 @@ describe('CQC tests', function () {
       {
         pluginPaths: [
           require.resolve('@wmfs/tymly-pg-plugin'),
-          path.resolve(__dirname, '../node_modules/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
         ],
         blueprintPaths: [
           path.resolve(__dirname, './../')
