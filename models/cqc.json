@@ -2,7 +2,7 @@
   "title": "cqc",
   "description": "Gets data from a CQC CSV file and pushes it into the Tymly DB",
   "primaryKey": [
-    "location_id"
+    "locationId"
   ],
   "type": "object",
   "properties": {
