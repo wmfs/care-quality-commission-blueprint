@@ -1,7 +1,7 @@
 # care-quality-commission-blueprint
 [![Tymly Blueprint](https://img.shields.io/badge/tymly-blueprint-blue.svg)](https://tymly.io/)
 [![npm (scoped)](https://img.shields.io/npm/v/@wmfs/care-quality-commission-blueprint.svg)](https://www.npmjs.com/package/@wmfs/care-quality-commission-blueprint)
-[![Build Status](https://travis-ci.org/wmfs/care-quality-commission-blueprint.svg?branch=master)](https://travis-ci.org/wmfs/care-quality-commission-blueprint)
+[![CircleCI](https://circleci.com/gh/wmfs/care-quality-commission-blueprint.svg?style=svg)](https://circleci.com/gh/wmfs/care-quality-commission-blueprint)
 [![codecov](https://codecov.io/gh/wmfs/care-quality-commission-blueprint/branch/master/graph/badge.svg)](https://codecov.io/gh/wmfs/care-quality-commission-blueprint)
 [![CodeFactor](https://www.codefactor.io/repository/github/wmfs/care-quality-commission-blueprint/badge)](https://www.codefactor.io/repository/github/wmfs/care-quality-commission-blueprint)
 [![Dependabot badge](https://img.shields.io/badge/Dependabot-active-brightgreen.svg)](https://dependabot.com/)
