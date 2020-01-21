@@ -1,10 +1,9 @@
 {
   "namespace": "cqc",
   "name": "care-quality-commission-blueprint",
-  "version": "1.0",
+  "version": "1.0.17",
   "label": "care-quality-commission-blueprint",
   "author": "Reece Brend",
-
   "organisation": "West Midlands Fire Service",
   "description": "Blueprint to get CQC attribute for use in hospital RIDGE model",
   "categories": []
