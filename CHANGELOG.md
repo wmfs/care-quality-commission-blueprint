@@ -1,3 +1,92 @@
+## [1.0.17](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.0.16...v1.0.17) (2020-01-21)
+
+
+### 🐛 Bug Fixes
+
+* remove audit trigger from models ([3c26ce4](https://github.com/wmfs/care-quality-commission-blueprint/commit/3c26ce4707e92686d8903a7ddb27b64f4901b37f))
+
+
+### 🛠 Builds
+
+* **deps-dev:** add [@semantic-release](https://github.com/semantic-release)/exec ([2968ad8](https://github.com/wmfs/care-quality-commission-blueprint/commit/2968ad83e8b34b7afdcbe7ea8d7916821171aa5e))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 3.0.4 to 3.0.6 ([e332eb0](https://github.com/wmfs/care-quality-commission-blueprint/commit/e332eb08599dc536d25367a2b9dd457defe16678))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/exec from 3.3.7 to 3.3.8 ([379561e](https://github.com/wmfs/care-quality-commission-blueprint/commit/379561e7d2a764a9054e2d7c9053202ebd8f07b4))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/git from 7.0.16 to 7.0.18 ([58ee968](https://github.com/wmfs/care-quality-commission-blueprint/commit/58ee96879ec639b57ae38ad0817075310666f01e))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.103.3 to 1.104.0 ([88f8c70](https://github.com/wmfs/care-quality-commission-blueprint/commit/88f8c707e10bc9a1c730d1830bd9afb92f86ba77))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.104.0 to 1.105.0 ([5890a75](https://github.com/wmfs/care-quality-commission-blueprint/commit/5890a75775ae4b0f4fa101b6b284ddbfffff5e88))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.105.0 to 1.106.0 ([60ac4aa](https://github.com/wmfs/care-quality-commission-blueprint/commit/60ac4aafe3510c8b18112e7d6425978e4235ea14))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.106.0 to 1.107.0 ([3f51940](https://github.com/wmfs/care-quality-commission-blueprint/commit/3f51940e4386830e8137569c01de0d3681afe58d))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.107.0 to 1.108.0 ([30a97a7](https://github.com/wmfs/care-quality-commission-blueprint/commit/30a97a736bed9ec55af8716a8f66d3ce1b1ecbfa))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.108.0 to 1.109.0 ([2ac6271](https://github.com/wmfs/care-quality-commission-blueprint/commit/2ac62715955a9de03d93894d333c96b699382cb3))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.109.0 to 1.110.0 ([a5c18ba](https://github.com/wmfs/care-quality-commission-blueprint/commit/a5c18bafef0b0aa0fedb66024b042c09f70a506b))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly from 1.99.0 to 1.103.3 ([6b9be7f](https://github.com/wmfs/care-quality-commission-blueprint/commit/6b9be7fb12ccb835015dd7c93d4e5d1908757da8))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.110.0 to 1.111.0 ([cf917da](https://github.com/wmfs/care-quality-commission-blueprint/commit/cf917daedf64f80e933e576b35f2bab7c7c5fc22))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.111.0 to 1.112.0 ([57acea6](https://github.com/wmfs/care-quality-commission-blueprint/commit/57acea61a901f19200c059fa404a3979af733808))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.112.0 to 1.113.0 ([17d0a39](https://github.com/wmfs/care-quality-commission-blueprint/commit/17d0a3912604b036d74f3c78dabe1ce42baa8e1c))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.113.0 to 1.115.0 ([f89c06d](https://github.com/wmfs/care-quality-commission-blueprint/commit/f89c06de15415d09b957f5038791ee6b1707ba4c))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.115.0 to 1.116.0 ([16da64e](https://github.com/wmfs/care-quality-commission-blueprint/commit/16da64e46486a539a36b70d2a36de7a1a276065a))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-etl-plugin from 1.116.0 to 1.117.0 ([25ee14e](https://github.com/wmfs/care-quality-commission-blueprint/commit/25ee14e01871e9d145af76e5a9173bac4cba0a9c))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.135.0 to 1.137.0 ([1de2113](https://github.com/wmfs/care-quality-commission-blueprint/commit/1de2113f3e2bbbb1fdd09522357a6b681700a072))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.137.0 to 1.139.0 ([d8af9bd](https://github.com/wmfs/care-quality-commission-blueprint/commit/d8af9bd118b370bfa8db8182d45fff3003671835))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.139.0 to 1.140.0 ([0bac018](https://github.com/wmfs/care-quality-commission-blueprint/commit/0bac01842e4e863e598f0a7ccbeeea30490fc93e))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.140.0 to 1.141.0 ([cfe1393](https://github.com/wmfs/care-quality-commission-blueprint/commit/cfe13939ef8cd1fc19bb65435cd8effa9312a1d5))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.141.0 to 1.142.0 ([0abc79f](https://github.com/wmfs/care-quality-commission-blueprint/commit/0abc79f2e75864794791f2e5315ef609ad49b0d1))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.142.0 to 1.143.0 ([9a3f2b8](https://github.com/wmfs/care-quality-commission-blueprint/commit/9a3f2b83b7cc310b9b9703cbdbe341f670643af1))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.143.0 to 1.144.0 ([db7980f](https://github.com/wmfs/care-quality-commission-blueprint/commit/db7980f06dac23ca87fdde042ebe40df3e4b91e4))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.144.0 to 1.145.0 ([26fa17b](https://github.com/wmfs/care-quality-commission-blueprint/commit/26fa17ba33de3736d2fdc327f4899c379ee5ad04))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.145.0 to 1.146.0 ([c34c7ef](https://github.com/wmfs/care-quality-commission-blueprint/commit/c34c7efedcf520a9cfd3e7a962e3fa5be2b62ce6))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.146.0 to 1.147.0 ([9ed70bb](https://github.com/wmfs/care-quality-commission-blueprint/commit/9ed70bbc3c09f8296bb2d557130a489a8f9c5c7e))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.146.0 to 1.148.0 ([1f9fa2d](https://github.com/wmfs/care-quality-commission-blueprint/commit/1f9fa2d18a5226b0668b4c77d2d6e8347cf8f645))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-pg-plugin from 1.148.0 to 1.151.0 ([0a9e8c5](https://github.com/wmfs/care-quality-commission-blueprint/commit/0a9e8c50f16a7e399d8703b4f7dc9c60f6bf5ab7))
+* **deps-dev:** bump [@wmfs](https://github.com/wmfs)/tymly-test-helpers from 1.3.0 to 1.4.0 ([00da89d](https://github.com/wmfs/care-quality-commission-blueprint/commit/00da89dac6bb84dd9ab443befc3cbb545fed1f94))
+* **deps-dev:** bump conventional-changelog-metahub from 3.0.0 to 4.0.0 ([aad4728](https://github.com/wmfs/care-quality-commission-blueprint/commit/aad47282d207de9d3bf1ef83af7460070aae268f))
+* **deps-dev:** bump mocha from 6.2.2 to 7.0.0 ([540fe18](https://github.com/wmfs/care-quality-commission-blueprint/commit/540fe188f03bc55718741ba2a7def1b00da750b6))
+* **deps-dev:** bump nyc from 14.1.1 to 15.0.0 ([d116915](https://github.com/wmfs/care-quality-commission-blueprint/commit/d1169154f4b5e3a0a2f52d3900f64a1979f34bf3))
+* **deps-dev:** bump semantic-release from 15.13.27 to 15.14.0 ([57ede41](https://github.com/wmfs/care-quality-commission-blueprint/commit/57ede4141c9489e22354a86714ebd75bb3e80eb0))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([b029941](https://github.com/wmfs/care-quality-commission-blueprint/commit/b029941c272bddbac8da093f23c910f9404f1961))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([3ae4fa7](https://github.com/wmfs/care-quality-commission-blueprint/commit/3ae4fa75069a22c2eb52ebdb408b2f2c9ad74574))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([4ed0695](https://github.com/wmfs/care-quality-commission-blueprint/commit/4ed0695d6c6e9d3abf721cc946872ddfc54c70e6))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([b65fa00](https://github.com/wmfs/care-quality-commission-blueprint/commit/b65fa00a06a029c0577fc284c3707bb1ede713e0))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([ad8db49](https://github.com/wmfs/care-quality-commission-blueprint/commit/ad8db494d9cc74ba0d4afd599e62a1cfd548b468))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.75.0 to 1.78.1 ([7fe0e8d](https://github.com/wmfs/care-quality-commission-blueprint/commit/7fe0e8da7f1ad3f71e20d19df7a4935686c40885))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly requirement from 1.78.1 to 1.94.1 ([d4fa799](https://github.com/wmfs/care-quality-commission-blueprint/commit/d4fa799847270d1957087e8bcd12e8f56379ceca))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([ae2f0a4](https://github.com/wmfs/care-quality-commission-blueprint/commit/ae2f0a4e251c6dbbb10d86e21c25b485aaecec1a))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-etl-plugin requirement ([c0e1646](https://github.com/wmfs/care-quality-commission-blueprint/commit/c0e16460e8ac9e2034d5e4c2e0aa1d8dec70f6c4))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs)/tymly-pg-plugin requirement ([911c132](https://github.com/wmfs/care-quality-commission-blueprint/commit/911c13270d6e673aa1c9cb58c2aeda5c792d81bc))
+* **deps-dev:** update codecov requirement from 3.1.0 to 3.5.0 ([34ffe4a](https://github.com/wmfs/care-quality-commission-blueprint/commit/34ffe4ae87fb01a091bc9d220bbe3b1c8136f8fa))
+* **deps-dev:** update debug requirement from 4.1.0 to 4.1.1 ([01fc249](https://github.com/wmfs/care-quality-commission-blueprint/commit/01fc2491de25a5c29cb934e77e10ab920ec1630d))
+* **deps-dev:** update dev dependancies ([884fa26](https://github.com/wmfs/care-quality-commission-blueprint/commit/884fa267356e8f9f61053ce3e13be5f527686fcb))
+* **deps-dev:** update dev packages ([0865d77](https://github.com/wmfs/care-quality-commission-blueprint/commit/0865d77dbd30fa08f9828a881629a074c048b0b0))
+* **deps-dev:** update mocha requirement from 5.2.0 to 6.1.4 ([9ef1ef2](https://github.com/wmfs/care-quality-commission-blueprint/commit/9ef1ef2ceb882f4f22c0415a34daa11988fbdc8d))
+* **deps-dev:** update nyc requirement from 13.1.0 to 14.1.1 ([998c8a6](https://github.com/wmfs/care-quality-commission-blueprint/commit/998c8a689f6369ba395c23a7dd9b89878a1731a5))
+* **deps-dev:** update semantic-release requirement ([64943c7](https://github.com/wmfs/care-quality-commission-blueprint/commit/64943c72c25da8fd07aa22a0f98b9d0b7b9d9e26))
+* **deps-dev:** update semantic-release requirement ([ff38270](https://github.com/wmfs/care-quality-commission-blueprint/commit/ff382706240b643c605f5bf8c4d6df6446893183))
+* **deps-dev:** update semantic-release requirement ([6435456](https://github.com/wmfs/care-quality-commission-blueprint/commit/643545656e24a61eaa0a13c0fb0319efe4786418))
+
+
+### 📦 Code Refactoring
+
+* typo ([b3306dd](https://github.com/wmfs/care-quality-commission-blueprint/commit/b3306dd488109f85c8ee8e055de36ef8fe7faba8))
+
+
+### 📚 Documentation
+
+* add circleci status [skip ci] ([701ce4d](https://github.com/wmfs/care-quality-commission-blueprint/commit/701ce4dbf32771a0313544629fca10b5d4fd4451))
+
+
+### ⚙️ Continuous Integrations
+
+* chmod version_blueprint script ([133b07a](https://github.com/wmfs/care-quality-commission-blueprint/commit/133b07ace93805f4fbd51ff30947bf2422e02f4b))
+* **circle:** Update CircleCI config - Travis migration ([369b65b](https://github.com/wmfs/care-quality-commission-blueprint/commit/369b65b91e3741d27ee5e0fb0431cdc1a3418187))
+* **travis:** remove Travis config ([9b77f65](https://github.com/wmfs/care-quality-commission-blueprint/commit/9b77f657dc8c64eab7f57c92d9fd35b5421e3daf))
+
+
+### ♻️ Chores
+
+* add version blueprint script ([9063ee0](https://github.com/wmfs/care-quality-commission-blueprint/commit/9063ee04f76f4d34021f4a3ce54ee13ddb93dca9))
+* update semantic-release config [ch27] ([312ef6f](https://github.com/wmfs/care-quality-commission-blueprint/commit/312ef6f493a8c1ccef8fc74898d15547754828d4))
+* update semenatic-release config ([2ae9e75](https://github.com/wmfs/care-quality-commission-blueprint/commit/2ae9e7570bf90705ed797d7f5dbe612d39dcd27e))
+
 ## [1.0.16](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.0.15...v1.0.16) (2019-01-23)
 
 
