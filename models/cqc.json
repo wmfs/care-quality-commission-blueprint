@@ -5,6 +5,7 @@
     "locationId"
   ],
   "type": "object",
+  "audit": false,
   "properties": {
     "locationId": {
       "type": "string",
