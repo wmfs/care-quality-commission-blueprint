@@ -40,7 +40,7 @@ describe('CQC tests', function () {
         tymlyService = tymlyServices.tymly
         statebox = tymlyServices.statebox
         client = tymlyServices.storage.client
-        cqcModel = tymlyServices.storage.models['cqc_cqc']
+        cqcModel = tymlyServices.storage.models.cqc_cqc
         done()
       }
     )
