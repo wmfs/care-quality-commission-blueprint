@@ -23,8 +23,8 @@ describe('CQC tests', function () {
     }
   })
 
-  it('should startup tymly', function (done) {
-    tymly.boot(
+  it('startup tymly', async () => {
+    const tymlyServices = await tymly.boot(
       {
         pluginPaths: [
           require.resolve('@wmfs/tymly-pg-plugin'),
@@ -34,46 +34,40 @@ describe('CQC tests', function () {
           path.resolve(__dirname, './../')
         ],
         config: {}
-      },
-      function (err, tymlyServices) {
-        expect(err).to.eql(null)
-        tymlyService = tymlyServices.tymly
-        statebox = tymlyServices.statebox
-        client = tymlyServices.storage.client
-        cqcModel = tymlyServices.storage.models.cqc_cqc
-        done()
       }
     )
+
+    tymlyService = tymlyServices.tymly
+    statebox = tymlyServices.statebox
+    client = tymlyServices.storage.client
+    cqcModel = tymlyServices.storage.models.cqc_cqc
   })
 
-  it('should execute importingCsvFiles', function (done) {
-    statebox.startExecution(
+  it('execute importingCsvFiles', async () => {
+    const executionDescription = await statebox.startExecution(
       {
         sourceDir: path.resolve(__dirname, './fixtures/input')
       },
       STATE_MACHINE_NAME,
       {
         sendResponse: 'COMPLETE'
-      },
-      function (err, executionDescription) {
-        expect(err).to.eql(null)
-        expect(executionDescription.status).to.eql('SUCCEEDED')
-        expect(executionDescription.currentStateName).to.equal('ImportingCsvFiles')
-        done()
       }
     )
+
+    expect(executionDescription.status).to.eql('SUCCEEDED')
+    expect(executionDescription.currentStateName).to.equal('ImportingCsvFiles')
   })
 
-  it('should check the rows have been inserted', async () => {
+  it('verify data in table', async () => {
     const res = await cqcModel.find({})
     expect(res.length).to.eql(5)
   })
 
-  it('should clean up the tables', () => {
-    return sqlScriptRunner('./db-scripts/cleanup.sql', client)
+  after('clean up the tables', async () => {
+    await sqlScriptRunner('./db-scripts/cleanup.sql', client)
   })
 
-  it('should shutdown Tymly', async () => {
+  after('shutdown Tymly', async () => {
     await tymlyService.shutdown()
   })
 })
