@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  test:
+  unit test:
     docker:
       # use node:lts
       - image: circleci/node:lts
