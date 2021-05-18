@@ -104,8 +104,6 @@ local.properties
 scratch.txt
 package-lock.json
 
-output/
-
 # Ignore Rush temporary files
 /common/temp/**
 
