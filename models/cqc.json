@@ -7,6 +7,10 @@
   "type": "object",
   "audit": false,
   "properties": {
+    "uprn": {
+      "type": "integer",
+      "maxLength": 12
+    },
     "locationId": {
       "type": "string",
       "maxLength": 12
