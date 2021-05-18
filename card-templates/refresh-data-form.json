@@ -1,0 +1,155 @@
+{
+  "templateMeta": {
+    "name": "cqc-refresh-data-form",
+    "title": "Refresh CQC Data via CSV File",
+    "category": "cqc"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Refresh CQC Data via CSV File"
+    },
+    {
+      "type": "Container",
+      "spacing": "none",
+      "bordered": true,
+      "shadowed": true,
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Upload CSV File",
+          "weight": "bolder",
+          "spacing": "small"
+        },
+        {
+          "id": "cqcUpload",
+          "type": "Input.FileUpload",
+          "onUploadEndpoint": {
+            "name": "cqc_refreshDataUpload_1_0"
+          },
+          "autoUpload": true,
+          "additionalFields": {
+            "upload": true
+          },
+          "accept": [
+            ".csv"
+          ]
+        },
+        {
+          "color": "good",
+          "type": "Container",
+          "showWhen": "data.uploadGood",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{data.uploadGood}}",
+              "weight": "bolder",
+              "spacing": "small"
+            }
+          ]
+        },
+        {
+          "color": "warning",
+          "type": "Container",
+          "showWhen": "data.uploadWarning",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{data.uploadWarning}}",
+              "weight": "bolder",
+              "spacing": "small"
+            }
+          ]
+        },
+        {
+          "color": "attention",
+          "type": "Container",
+          "showWhen": "data.uploadError",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{data.uploadError}}",
+              "weight": "bolder",
+              "spacing": "small"
+            }
+          ]
+        },
+        {
+          "showWhen": "data.uploadWarning",
+          "type": "Table",
+          "arrayPath": "data.rejected",
+          "title": "Rejected rows",
+          "columns": [
+            {
+              "title": "#",
+              "field": "idx"
+            },
+            {
+              "title": "Missing values",
+              "field": "missingProperties",
+              "format": "item.missingProperties.join(', ')"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "spacing": "none",
+      "bordered": true,
+      "shadowed": true,
+      "showWhen": "data.history && data.history.length > 0",
+      "items": [
+        {
+          "type": "MarkupTable",
+          "title": "Previous imports",
+          "arrayPath": "data.history",
+          "columns": [
+            {
+              "title": "Filename",
+              "value": "{{ item.clientFilename }}"
+            },
+            {
+              "title": "Num. rows imported",
+              "value": "{{ item.totalRows }}"
+            },
+            {
+              "title": "Num. rows rejected",
+              "value": "{{ item.totalRejected }}"
+            },
+            {
+              "title": "Modified",
+              "value": "{{ formatDate(item.modified, 'Do MMM YYYY HH:mm') }}"
+            },
+            {
+              "title": "Modified by",
+              "value": "{{ item.modifiedBy || item.createdBy }}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Cancel"
+    },
+    {
+      "showWhen": "data.uploadGood || data.uploadWarning",
+      "type": "Action.ReplaceCard",
+      "stateMachineName": "cqc_refreshDataSubmit_1_0",
+      "title": "Import",
+      "input": {
+        "rows":  "$.rows",
+        "serverFilename": "$.serverFilename",
+        "clientFilename": "$.clientFilename",
+        "totalRows": "$.totalRows",
+        "totalRejected": "$.totalRejected"
+      }
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

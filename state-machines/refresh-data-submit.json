@@ -1,0 +1,44 @@
+{
+  "Comment": "Refresh CQC Data via CSV File",
+  "name": "Refresh CQC Data via CSV File",
+  "version": "1.0",
+  "categories": [
+    "cqc"
+  ],
+  "StartAt": "SetLauncher",
+  "States": {
+    "SetLauncher": {
+      "Type": "Pass",
+      "Parameters": {
+        "callbackPath": "requiredHumanInput.data"
+      },
+      "ResultPath": "$.launcher",
+      "Next": "Import"
+    },
+    "Import": {
+      "Type": "Task",
+      "Resource": "module:launchStateMachine",
+      "ResourceConfig": { "stateMachine": "cqc_refreshDataImport_1_0" },
+      "Next": "ShowResults"
+    },
+    "ShowResults": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "progress",
+        "uiName": "cqc_refreshDataResult",
+        "uiRefresh": 10,
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "dm_dataManager",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

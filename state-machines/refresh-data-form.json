@@ -1,0 +1,44 @@
+{
+  "Comment": "Refresh CQC Data via CSV File",
+  "name": "Refresh CQC Data via CSV File",
+  "version": "1.0",
+  "categories": [
+    "cqc"
+  ],
+  "instigators": [
+    "user"
+  ],
+  "StartAt": "LoadImportHistory",
+  "States": {
+    "LoadImportHistory": {
+      "Type": "Task",
+      "Resource": "module:finding",
+      "ResourceConfig": {
+        "modelId": "cqc_importLog",
+        "filter": {
+          "orderBy": ["-modified"]
+        }
+      },
+      "ResultPath": "$.history",
+      "Next": "FillForm"
+    },
+    "FillForm": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "cqc_refreshDataForm",
+        "dataPath": "$"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "dm_dataManager",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
