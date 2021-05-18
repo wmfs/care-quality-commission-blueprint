@@ -25,9 +25,6 @@
     },
     "totalRows": {
       "type": "integer"
-    },
-    "totalRejected": {
-      "type": "integer"
     }
   }
 }
