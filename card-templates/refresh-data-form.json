@@ -33,7 +33,7 @@
             "upload": true
           },
           "accept": [
-            ".csv"
+            ".ods"
           ]
         },
         {
