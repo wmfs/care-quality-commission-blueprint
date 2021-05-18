@@ -115,10 +115,6 @@
               "value": "{{ item.totalRows }}"
             },
             {
-              "title": "Num. rows rejected",
-              "value": "{{ item.totalRejected }}"
-            },
-            {
               "title": "Modified",
               "value": "{{ formatDate(item.modified, 'Do MMM YYYY HH:mm') }}"
             },
@@ -142,11 +138,10 @@
       "stateMachineName": "cqc_refreshDataSubmit_1_0",
       "title": "Import",
       "input": {
-        "rows":  "$.rows",
+        "importDirectory":  "$.importDirectory",
         "serverFilename": "$.serverFilename",
         "clientFilename": "$.clientFilename",
-        "totalRows": "$.totalRows",
-        "totalRejected": "$.totalRejected"
+        "totalRows": "$.totalRows"
       }
     }
   ],

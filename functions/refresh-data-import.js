@@ -34,7 +34,6 @@ module.exports = function () {
       serverFilename,
       clientFilename,
       totalRows,
-      totalRejected,
       importDirectory
     } = event
 
@@ -49,7 +48,6 @@ module.exports = function () {
       serverFilename,
       clientFilename,
       totalRows,
-      totalRejected,
       startTime: new Date(),
       totalRowsInserted: 0,
       progress: 0,
