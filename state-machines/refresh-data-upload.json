@@ -5,8 +5,20 @@
   "categories": [
     "cqc"
   ],
-  "StartAt": "Process",
+  "StartAt": "ImportDirectory",
   "States": {
+    "ImportDirectory": {
+      "Type": "Task",
+      "Resource": "module:getConfiguredRegistryKey",
+      "ResourceConfig": {
+        "key": "cqc_cqcImportDirectory"
+      },
+      "Parameters": {
+        "defaultValue": false
+      },
+      "ResultPath": "$.importDirectory",
+      "Next": "Process"
+    },
     "Process": {
       "Type": "Task",
       "Resource": "function:cqc_refreshDataUpload",

@@ -1,0 +1,14 @@
+{
+  "label": "CQC Import Directory",
+  "description": "CQC Import Directory",
+  "schema": {
+    "properties": {
+      "environmentVariableName": "CQC_IMPORT_DIRECTORY",
+      "value": {
+        "type": "string",
+        "default": "Please insert value here"
+      }
+    },
+    "required": ["value"]
+  }
+}

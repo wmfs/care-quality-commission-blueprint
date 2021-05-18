@@ -20,7 +20,9 @@
     "url": "https://github.com/wmfs/care-quality-commission-blueprint/issues"
   },
   "dependencies": {
-    "xlsx": "0.17.0"
+    "xlsx": "0.17.0",
+    "csv-writer": "1.6.0",
+    "csv-parse": "4.15.4"
   },
   "devDependencies": {
     "chai": "4.3.4",

@@ -76,14 +76,15 @@ describe('CQC tests', function () {
     const event = {
       body: {
         upload: {
-          serverFilename: path.join(__dirname, 'fixtures', 'example.ods')
+          serverFilename: path.join(__dirname, 'fixtures', 'example.ods'),
+          clientFilename: path.join(__dirname, 'fixtures', 'example.ods')
         }
-      }
+      },
+      importDirectory: path.join(__dirname, 'fixtures', 'output')
     }
 
     const res = await refreshDataUpload(event)
 
-    expect(res.rows.length).to.eql(TOTAL_ROWS)
     expect(res.totalRows).to.eql(TOTAL_ROWS)
 
     await refreshDataImport(res, { bootedServices }, {})
