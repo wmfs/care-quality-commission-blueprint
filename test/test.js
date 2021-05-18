@@ -71,7 +71,7 @@ describe('CQC tests', function () {
   })
 
   it('import spreadsheet', async () => {
-    const TOTAL_ROWS = 49
+    const TOTAL_ROWS = 13
 
     const event = {
       body: {
@@ -84,7 +84,6 @@ describe('CQC tests', function () {
     }
 
     const res = await refreshDataUpload(event)
-
     expect(res.totalRows).to.eql(TOTAL_ROWS)
 
     await refreshDataImport(res, { bootedServices }, {})

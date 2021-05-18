@@ -8,7 +8,11 @@ function readCsv (filepath, rows) {
   return new Promise((resolve, reject) => {
     fs.createReadStream(filepath)
       .pipe(csvparse({ columns: true }))
-      .on('data', row => rows.push(row))
+      .on('data', row => {
+        const r = {}
+        for (const [k, v] of Object.entries(row)) { if (v !== null && v !== undefined && v !== '') r[k] = v }
+        rows.push(r)
+      })
       .on('error', reject)
       .on('end', resolve)
   })
