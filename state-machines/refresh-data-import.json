@@ -1,0 +1,24 @@
+{
+  "Comment": "Refresh CQC Data via CSV File",
+  "name": "Refresh CQC Data via CSV File",
+  "version": "1.0",
+  "categories": [
+    "cqc"
+  ],
+  "StartAt": "Process",
+  "States": {
+    "Process": {
+      "Type": "Task",
+      "Resource": "function:cqc_refreshDataImport",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "dm_dataManager",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

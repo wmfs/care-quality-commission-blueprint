@@ -1,0 +1,63 @@
+{
+  "templateMeta": {
+    "name": "cqc-refresh-data-result",
+    "title": "Refresh CQC Data via CSV File",
+    "category": "cqc"
+  },
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Jumbotron",
+      "title": "Refresh CQC Data via CSV File"
+    },
+    {
+      "type": "Container",
+      "color": "warning",
+      "spacing": "small",
+      "showWhen": "!data.complete",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Import in progress"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "color": "good",
+      "spacing": "small",
+      "showWhen": "data.complete",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Import complete"
+        }
+      ]
+    },
+    {
+      "showWhen": "data.progress",
+      "type": "Container",
+      "spacing": "none",
+      "bordered": true,
+      "shadowed": true,
+      "items": [
+        {
+          "type": "LinearProgressBar",
+          "progressPath": "data.progress"
+        },
+        {
+          "type": "TextBlock",
+          "text": "{{ data.totalRowsInserted }} out of {{ data.totalRows }} rows inserted."
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Cancel",
+      "title": "Close"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0"
+}

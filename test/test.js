@@ -8,13 +8,15 @@ const path = require('path')
 const tymly = require('@wmfs/tymly')
 const process = require('process')
 const sqlScriptRunner = require('./fixtures/sql-script-runner.js')
+const refreshDataUpload = require('../functions/refresh-data-upload')()
+const refreshDataImport = require('../functions/refresh-data-import')()
 
 describe('CQC tests', function () {
   this.timeout(process.env.TIMEOUT || 5000)
 
   const STATE_MACHINE_NAME = 'cqc_refreshFromCsvFile_1_0'
 
-  let tymlyService, statebox, client, cqcModel
+  let bootedServices, tymlyService, statebox, client, cqcModel
 
   before(function () {
     if (process.env.PG_CONNECTION_STRING && !/^postgres:\/\/[^:]+:[^@]+@(?:localhost|127\.0\.0\.1).*$/.test(process.env.PG_CONNECTION_STRING)) {
@@ -27,8 +29,12 @@ describe('CQC tests', function () {
     const tymlyServices = await tymly.boot(
       {
         pluginPaths: [
-          require.resolve('@wmfs/tymly-pg-plugin'),
-          path.resolve(__dirname, '../node_modules/@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin')
+          require.resolve('@wmfs/tymly-test-helpers/plugins/mock-solr-plugin'),
+          require.resolve('@wmfs/tymly-test-helpers/plugins/mock-rest-client-plugin'),
+          require.resolve('@wmfs/tymly-test-helpers/plugins/mock-os-places-plugin'),
+          require.resolve('@wmfs/tymly-test-helpers/plugins/allow-everything-rbac-plugin'),
+          require.resolve('@wmfs/tymly-cardscript-plugin'),
+          require.resolve('@wmfs/tymly-pg-plugin')
         ],
         blueprintPaths: [
           path.resolve(__dirname, './../')
@@ -37,6 +43,7 @@ describe('CQC tests', function () {
       }
     )
 
+    bootedServices = tymlyServices
     tymlyService = tymlyServices.tymly
     statebox = tymlyServices.statebox
     client = tymlyServices.storage.client
@@ -61,6 +68,28 @@ describe('CQC tests', function () {
   it('verify data in table', async () => {
     const res = await cqcModel.find({})
     expect(res.length).to.eql(5)
+  })
+
+  it('import spreadsheet', async () => {
+    const TOTAL_ROWS = 49
+
+    const event = {
+      body: {
+        upload: {
+          serverFilename: path.join(__dirname, 'fixtures', 'example.ods')
+        }
+      }
+    }
+
+    const res = await refreshDataUpload(event)
+
+    expect(res.rows.length).to.eql(TOTAL_ROWS)
+    expect(res.totalRows).to.eql(TOTAL_ROWS)
+
+    await refreshDataImport(res, { bootedServices }, {})
+
+    const rows = await cqcModel.find({})
+    expect(rows.length).to.eql(TOTAL_ROWS)
   })
 
   after('clean up the tables', async () => {
