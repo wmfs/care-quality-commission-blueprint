@@ -1,5 +1,18 @@
 const cloneDeep = require('lodash.clonedeep')
 const dottie = require('dottie')
+const csvparse = require('csv-parse')
+const fs = require('fs')
+const path = require('path')
+
+function readCsv (filepath, rows) {
+  return new Promise((resolve, reject) => {
+    fs.createReadStream(filepath)
+      .pipe(csvparse({ columns: true }))
+      .on('data', row => rows.push(row))
+      .on('error', reject)
+      .on('end', resolve)
+  })
+}
 
 module.exports = function () {
   return async function refreshDataImport (event, env, context) {
@@ -14,12 +27,19 @@ module.exports = function () {
     } = models
 
     const {
-      rows,
       serverFilename,
       clientFilename,
       totalRows,
-      totalRejected
+      totalRejected,
+      importDirectory
     } = event
+
+    if (
+      !isAccessible(importDirectory) ||
+      !fs.statSync(importDirectory).isDirectory()
+    ) {
+      return
+    }
 
     const importLog = {
       serverFilename,
@@ -36,6 +56,11 @@ module.exports = function () {
     importLog.id = importLogDoc.idProperties.id
 
     await client.query('TRUNCATE TABLE cqc.cqc;')
+
+    const rows = []
+
+    const csvFileName = path.basename(clientFilename, '.ods') + '.csv'
+    await readCsv(path.join(importDirectory, csvFileName), rows)
 
     for (const row of rows) {
       await cqcModel.create(row)
@@ -85,3 +110,12 @@ async function progress (importLog, complete, event, env, context) {
     }
   }
 }
+
+function isAccessible (importDirectory) {
+  try {
+    fs.accessSync(importDirectory, fs.constants.R_OK)
+    return true
+  } catch (e) {
+    return false
+  }
+} // isAccessible

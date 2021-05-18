@@ -1,4 +1,6 @@
 const xslx = require('xlsx')
+const path = require('path')
+const createCsvWriter = require('csv-writer').createObjectCsvWriter
 
 const modelPropertyMap = [
   ['uprn', 'Location UPRN ID'],
@@ -105,6 +107,19 @@ function locateSheet (workbook) {
   return sheet[0]
 } // locateSheet
 
+async function writeCsvFile (dir, name, data) {
+  const csvFileName = path.basename(name, '.ods') + '.csv'
+  const header = modelPropertyMap.map(([id]) => { return { id, title: id } })
+
+  const csvWriter = createCsvWriter({
+    path: path.join(dir, csvFileName),
+    header,
+    alwaysQuote: true
+  })
+
+  await csvWriter.writeRecords(data)
+} // writeCsvFile
+
 module.exports = function () {
   return async function refreshDataUpload (event) {
     const {
@@ -113,7 +128,14 @@ module.exports = function () {
     } = event.body.upload
 
     try {
-      return processFile({ serverFilename, clientFilename })
+      const result = processFile({ serverFilename, clientFilename })
+
+      await writeCsvFile(event.importDirectory, clientFilename, result.rows)
+
+      result.importDirectory = event.importDirectory
+      delete result.rows
+
+      return result
     } catch (err) {
       return {
         uploadGood: '',
