@@ -84,6 +84,7 @@ describe('CQC tests', function () {
     }
 
     const res = await refreshDataUpload(event)
+    console.log(res)
     expect(res.totalRows).to.eql(TOTAL_ROWS)
 
     await refreshDataImport(res, { bootedServices }, {})
