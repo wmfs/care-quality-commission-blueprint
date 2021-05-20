@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.1.0...v1.2.0) (2021-05-20)
+
+
+### ✨ Features
+
+* show guidance for upload file ([bfd51d8](https://github.com/wmfs/care-quality-commission-blueprint/commit/bfd51d8abfdd742e1ecf19e5f0f42ba73c99668e))
+
 # [1.1.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.0.17...v1.1.0) (2021-05-18)
 
 
