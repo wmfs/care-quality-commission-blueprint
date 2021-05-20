@@ -7,8 +7,14 @@
   "type": "AdaptiveCard",
   "body": [
     {
-      "type": "Jumbotron",
-      "title": "Refresh CQC Data via CSV File"
+      "type": "Container",
+      "color": "accent",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Please upload the 'Care directory with filters' ODS file from here: <a href='https://www.cqc.org.uk/about-us/transparency/using-cqc-data' target='_blank' color='white'>https://www.cqc.org.uk/about-us/transparency/using-cqc-data</a>"
+        }
+      ]
     },
     {
       "type": "Container",
