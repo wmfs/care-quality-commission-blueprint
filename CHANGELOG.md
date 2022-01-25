@@ -1,3 +1,18 @@
+# [1.4.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.3.0...v1.4.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency csv-parse to v4.16.3 ([d06d106](https://github.com/wmfs/care-quality-commission-blueprint/commit/d06d1064493a9db36be6b30fcf8c1931a7ef4d87))
+* **deps-dev:** update dependency semantic-release to v17.4.5 ([4d53504](https://github.com/wmfs/care-quality-commission-blueprint/commit/4d535044c7504df445f1fd0f0d178216ffefff8e))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add build-env-vars context [sc-11392] ([ef59431](https://github.com/wmfs/care-quality-commission-blueprint/commit/ef594311b959e0bb606610ea691d3836edf9ba49))
+* **circle:** CircleCI update next gen PostgreSQL image [sc-11442] ([c466079](https://github.com/wmfs/care-quality-commission-blueprint/commit/c46607981ebe34e879ba3d9984faa1f112ad6ee5))
+* **circle:** update npm install command [sc-11392] ([327373e](https://github.com/wmfs/care-quality-commission-blueprint/commit/327373e82e21bb13da366d763b42c31801d50544))
+
 # [1.3.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.2.0...v1.3.0) (2021-08-04)
 
 
