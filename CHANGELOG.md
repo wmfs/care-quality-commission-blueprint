@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.4.0...v1.5.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency xlsx to v0.17.5 ([c856967](https://github.com/wmfs/care-quality-commission-blueprint/commit/c85696792059a0f3a91698d009a051202e3c0101))
+* **deps-dev:** update dependency debug to v4.3.3 ([b2dfbed](https://github.com/wmfs/care-quality-commission-blueprint/commit/b2dfbed36dcc2e43f61c46b6c1cde23ddfcd0600))
+* **deps-dev:** update dependency standard to v16.0.4 ([1d807de](https://github.com/wmfs/care-quality-commission-blueprint/commit/1d807de27f46a32aeac2f2b60b588eafb1b871da))
+
 # [1.4.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.3.0...v1.4.0) (2022-01-25)
 
 
