@@ -1,13 +1,13 @@
 const cloneDeep = require('lodash.clonedeep')
 const dottie = require('dottie')
-const csvparse = require('csv-parse')
+const { parse } = require('csv-parse')
 const fs = require('fs')
 const path = require('path')
 
 function readCsv (filepath, rows) {
   return new Promise((resolve, reject) => {
     fs.createReadStream(filepath)
-      .pipe(csvparse({ columns: true }))
+      .pipe(parse({ columns: true }))
       .on('data', row => {
         const r = {}
         for (const [k, v] of Object.entries(row)) { if (v !== null && v !== undefined && v !== '') r[k] = v }
