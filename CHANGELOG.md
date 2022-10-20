@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.5.1...v1.6.0) (2022-10-20)
+
+
+### 🐛 Bug Fixes
+
+* usage of csv-parse package ([8a35489](https://github.com/wmfs/care-quality-commission-blueprint/commit/8a35489deb54176e47cc7713f6d40560e8a0a49d))
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.42.1 ([a02bfa6](https://github.com/wmfs/care-quality-commission-blueprint/commit/a02bfa674d7cd05040123c1a1dcf9b17277a36ae))
+* **deps-dev:** update dependency mocha to v10.1.0 ([9996e34](https://github.com/wmfs/care-quality-commission-blueprint/commit/9996e347f429ffa43f9df48a45b99ffa9ca7ec47))
+* **deps:** update dependency csv-parse to v5 ([e498e6a](https://github.com/wmfs/care-quality-commission-blueprint/commit/e498e6a7a03cd770187f54770ecfcca2931b7aaa))
+
 ## [1.5.1](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.5.0...v1.5.1) (2022-09-27)
 
 
