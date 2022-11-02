@@ -39,7 +39,7 @@
     "@semantic-release/exec": "6.0.3",
     "@wmfs/tymly": "1.244.0",
     "@wmfs/tymly-pg-plugin": "1.271.0",
-    "@wmfs/tymly-etl-plugin": "1.161.0",
+    "@wmfs/tymly-etl-plugin": "1.163.0",
     "@wmfs/tymly-test-helpers": "1.22.2",
     "@wmfs/tymly-cardscript-plugin": "1.43.0"
   },
