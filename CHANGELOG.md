@@ -1,3 +1,13 @@
+# [1.7.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.6.0...v1.7.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.243.0 ([9ec2410](https://github.com/wmfs/care-quality-commission-blueprint/commit/9ec2410c6575626cf723b95ded6aaabdf806563a))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.43.0 ([9ee1d62](https://github.com/wmfs/care-quality-commission-blueprint/commit/9ee1d62a5e04ae13b2820039e3bef4897f594c17))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.271.0 ([97587ee](https://github.com/wmfs/care-quality-commission-blueprint/commit/97587ee22e6cf81e5e2f51b6db6687f7f407c25f))
+* **deps:** update dependency xlsx to v0.18.5 ([572704e](https://github.com/wmfs/care-quality-commission-blueprint/commit/572704ecd61f2e90cf30bbd700406a331774121a))
+
 # [1.6.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.5.1...v1.6.0) (2022-10-20)
 
 
