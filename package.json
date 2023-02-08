@@ -22,7 +22,7 @@
   "dependencies": {
     "xlsx": "0.18.5",
     "csv-writer": "1.6.0",
-    "csv-parse": "5.3.1"
+    "csv-parse": "5.3.5"
   },
   "devDependencies": {
     "chai": "4.3.7",
