@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.8.0...v1.9.0) (2023-03-13)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.277.0 ([b26a05e](https://github.com/wmfs/care-quality-commission-blueprint/commit/b26a05e8cb2b98d74277d4b37c84393e429b2178))
+* **deps-dev:** update dependency semantic-release to v20.1.1 ([d5e6622](https://github.com/wmfs/care-quality-commission-blueprint/commit/d5e66226662212e535d69e55596f1375df04f133))
+* **deps:** update dependency csv-parse to v5.3.6 ([c112811](https://github.com/wmfs/care-quality-commission-blueprint/commit/c11281157a7913e8af7c2a92a9fedbb46a788f8e))
+
 # [1.8.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.7.0...v1.8.0) (2023-02-16)
 
 
