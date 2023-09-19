@@ -1,3 +1,27 @@
+# [1.11.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.10.0...v1.11.0) (2023-09-19)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.258.0 ([6b1c0e0](https://github.com/wmfs/care-quality-commission-blueprint/commit/6b1c0e0a48bacb5d7e4cbcf167b28901c5148c41))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly to v1.261.0 ([3225960](https://github.com/wmfs/care-quality-commission-blueprint/commit/3225960506013b2b6f8c19a9e3b9f994b2d3e3c8))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-cardscript-plugin to v1.44.0 ([0e98dad](https://github.com/wmfs/care-quality-commission-blueprint/commit/0e98dad1f5fa2643c77fe46c873462387e1f045f))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-etl-plugin to v1.168.0 ([9bcb7a7](https://github.com/wmfs/care-quality-commission-blueprint/commit/9bcb7a728603d01237a41367d354caebd608cfd0))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.284.0 ([7f7504f](https://github.com/wmfs/care-quality-commission-blueprint/commit/7f7504f00e1ebac1b92138f0da27863023a927f4))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.286.0 ([60439a2](https://github.com/wmfs/care-quality-commission-blueprint/commit/60439a2e7ff7edc28ddeebada510312bb193e10e))
+* **deps-dev:** update dependency [@wmfs](https://github.com/wmfs)/tymly-pg-plugin to v1.288.0 ([fcbfaee](https://github.com/wmfs/care-quality-commission-blueprint/commit/fcbfaee29e52409bac94f6f34c6ada076d444411))
+* **deps-dev:** update dependency chai to v4.3.8 ([f500e4d](https://github.com/wmfs/care-quality-commission-blueprint/commit/f500e4d21ec5693f0b4a3cdcc98a4ab69e871638))
+* **deps-dev:** update dependency semantic-release to v21.0.3 ([2989ff1](https://github.com/wmfs/care-quality-commission-blueprint/commit/2989ff138dca067ed01b4fa3ab9389b814a00499))
+* **deps-dev:** update dependency semantic-release to v21.0.5 ([0687d76](https://github.com/wmfs/care-quality-commission-blueprint/commit/0687d76cebc3b9510f234ca2a8276c8e3227bb0a))
+* **deps-dev:** update dependency semantic-release to v21.0.6 ([4cb828a](https://github.com/wmfs/care-quality-commission-blueprint/commit/4cb828a21ad859991ff60861d1f2bebb9b616752))
+* **deps-dev:** update dependency semantic-release to v21.0.7 ([9e4104d](https://github.com/wmfs/care-quality-commission-blueprint/commit/9e4104d6ce82c58782ae9f6df435672d9915c4da))
+* **deps-dev:** update dependency semantic-release to v21.0.9 ([df344ae](https://github.com/wmfs/care-quality-commission-blueprint/commit/df344aedce1ba52a607daf0d058dbdc1b758a4aa))
+* **deps-dev:** update dependency semantic-release to v21.1.0 ([7d482ff](https://github.com/wmfs/care-quality-commission-blueprint/commit/7d482ffa540f0fb1870f37cacdcd124a3d0eee7f))
+* **deps-dev:** update dependency semantic-release to v21.1.1 ([c36f0cc](https://github.com/wmfs/care-quality-commission-blueprint/commit/c36f0cc71bb37e66e9bb4afe2092aab4850fa0ab))
+* **deps-dev:** update dependency semantic-release to v21.1.2 ([2d64add](https://github.com/wmfs/care-quality-commission-blueprint/commit/2d64add449d9cb31fabb4b3dcc0248b934e4443b))
+* **deps-dev:** update dependency semantic-release to v22 ([a34dcbd](https://github.com/wmfs/care-quality-commission-blueprint/commit/a34dcbd5cbd6f7325d879862235617764c6ffb80))
+* **deps:** revert semantic-release ([86fb53f](https://github.com/wmfs/care-quality-commission-blueprint/commit/86fb53f25297a27e34020e4bc5c4a722d264f167))
+
 # [1.10.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.9.0...v1.10.0) (2023-06-01)
 
 
