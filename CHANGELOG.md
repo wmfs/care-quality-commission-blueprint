@@ -1,3 +1,5 @@
+# [1.13.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.12.0...v1.13.0) (2024-11-22)
+
 # [1.12.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.11.0...v1.12.0) (2024-11-04)
 
 # [1.11.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.10.0...v1.11.0) (2023-09-19)
