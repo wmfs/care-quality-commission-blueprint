@@ -1,14 +1,14 @@
 {
   "templateMeta": {
     "name": "cqc-refresh-data-result",
-    "title": "Refresh CQC Data via CSV File",
+    "title": "Refresh CQC Data via ODS File",
     "category": "cqc"
   },
   "type": "AdaptiveCard",
   "body": [
     {
       "type": "Jumbotron",
-      "title": "Refresh CQC Data via CSV File"
+      "title": "Refresh CQC Data via ODS File"
     },
     {
       "type": "Container",

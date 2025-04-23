@@ -1,7 +1,7 @@
 {
   "templateMeta": {
     "name": "cqc-refresh-data-form",
-    "title": "Refresh CQC Data via CSV File",
+    "title": "Refresh CQC Data via ODS File",
     "category": "cqc"
   },
   "type": "AdaptiveCard",
@@ -24,7 +24,7 @@
       "items": [
         {
           "type": "TextBlock",
-          "text": "Upload CSV File",
+          "text": "Upload ODS File",
           "weight": "bolder",
           "spacing": "small"
         },

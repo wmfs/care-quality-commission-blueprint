@@ -1,6 +1,6 @@
 {
   "title": "cqc",
-  "description": "Gets data from a CQC CSV file and pushes it into the Tymly DB",
+  "description": "Gets data from a CQC ODS file and pushes it into the Tymly DB",
   "primaryKey": [
     "locationId"
   ],
