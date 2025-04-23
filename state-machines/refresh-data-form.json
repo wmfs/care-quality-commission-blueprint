@@ -1,6 +1,6 @@
 {
-  "Comment": "Refresh CQC Data via CSV File",
-  "name": "Refresh CQC Data via CSV File",
+  "Comment": "Refresh CQC Data via ODS File",
+  "name": "Refresh CQC Data via ODS File",
   "version": "1.0",
   "categories": [
     "cqc"
