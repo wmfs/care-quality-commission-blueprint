@@ -1,3 +1,13 @@
+## [1.16.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.15.0...v1.16.0) (2025-07-18)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @wmfs/tymly to v1.314.0 ([#1107](https://github.com/wmfs/care-quality-commission-blueprint/issues/1107)) ([452d056](https://github.com/wmfs/care-quality-commission-blueprint/commit/452d05658563b5dbabf2ee523536be44e4b74fb6))
+* **deps-dev:** update dependency @wmfs/tymly to v1.315.0 ([#1110](https://github.com/wmfs/care-quality-commission-blueprint/issues/1110)) ([b8df327](https://github.com/wmfs/care-quality-commission-blueprint/commit/b8df32789f0c12aadbed4b424780feddf732eedc))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.341.0 ([#1108](https://github.com/wmfs/care-quality-commission-blueprint/issues/1108)) ([b949876](https://github.com/wmfs/care-quality-commission-blueprint/commit/b9498767281f5389c2a644eeb7c89559d08c2310))
+* **deps-dev:** update dependency semantic-release to v24.2.7 ([#1109](https://github.com/wmfs/care-quality-commission-blueprint/issues/1109)) ([11096bf](https://github.com/wmfs/care-quality-commission-blueprint/commit/11096bf59a37994200491eee6e48f825abd59380))
+* **deps:** update dependency csv-parse to v6.1.0 ([#1111](https://github.com/wmfs/care-quality-commission-blueprint/issues/1111)) ([2c30db5](https://github.com/wmfs/care-quality-commission-blueprint/commit/2c30db5e3544e11ae80fa7c985410c9fce060c66))
+
 ## [1.15.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.14.0...v1.15.0) (2025-07-11)
 
 ### Build system dependencies :hammer:
