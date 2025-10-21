@@ -1,3 +1,20 @@
+## [1.17.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.16.0...v1.17.0) (2025-10-21)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @semantic-release/release-notes-generator to v14.1.0 ([#1114](https://github.com/wmfs/care-quality-commission-blueprint/issues/1114)) ([b1bab21](https://github.com/wmfs/care-quality-commission-blueprint/commit/b1bab21558e9265ffd7f3b25700fdb3f956a316f))
+* **deps-dev:** update dependency chai to v6 ([#1112](https://github.com/wmfs/care-quality-commission-blueprint/issues/1112)) ([ff0d0f6](https://github.com/wmfs/care-quality-commission-blueprint/commit/ff0d0f64b575fd48464305aa301d5ac474c97646))
+* **deps-dev:** update dependency chai to v6.2.0 ([#1118](https://github.com/wmfs/care-quality-commission-blueprint/issues/1118)) ([b3dd806](https://github.com/wmfs/care-quality-commission-blueprint/commit/b3dd8064579b19fbc9f98a199363171c1596d672))
+* **deps-dev:** update dependency debug to v4.4.3 ([#1116](https://github.com/wmfs/care-quality-commission-blueprint/issues/1116)) ([64c8dc7](https://github.com/wmfs/care-quality-commission-blueprint/commit/64c8dc727bab82db36cd32b54a94bf314452c192))
+* **deps-dev:** update dependency mocha to v11.7.2 ([#1113](https://github.com/wmfs/care-quality-commission-blueprint/issues/1113)) ([d35f823](https://github.com/wmfs/care-quality-commission-blueprint/commit/d35f823d0feb5023e0577ea6d5f188e5ac4d5014))
+* **deps-dev:** update dependency mocha to v11.7.3 ([#1119](https://github.com/wmfs/care-quality-commission-blueprint/issues/1119)) ([5f0db54](https://github.com/wmfs/care-quality-commission-blueprint/commit/5f0db543ff457a8e96f173cfd59308a999c0af13))
+* **deps-dev:** update dependency mocha to v11.7.4 ([#1120](https://github.com/wmfs/care-quality-commission-blueprint/issues/1120)) ([db5ab48](https://github.com/wmfs/care-quality-commission-blueprint/commit/db5ab4846c2d9f2dc93d8842e5f6f15df741b735))
+* **deps-dev:** update dependency semantic-release to v24.2.8 ([#1115](https://github.com/wmfs/care-quality-commission-blueprint/issues/1115)) ([95267d1](https://github.com/wmfs/care-quality-commission-blueprint/commit/95267d1d516311249708e1e10dc83c3b6ac3122b))
+* **deps-dev:** update dependency semantic-release to v24.2.9 ([#1117](https://github.com/wmfs/care-quality-commission-blueprint/issues/1117)) ([598b3d0](https://github.com/wmfs/care-quality-commission-blueprint/commit/598b3d01a292e38428117c392cd99e48f2c667f7))
+* **deps-dev:** update dependency semantic-release to v25 ([#1121](https://github.com/wmfs/care-quality-commission-blueprint/issues/1121)) ([4843496](https://github.com/wmfs/care-quality-commission-blueprint/commit/4843496952504e6be607fe452fbe3443f17b73e9))
+* **deps-dev:** update dependency semantic-release to v25.0.1 ([#1122](https://github.com/wmfs/care-quality-commission-blueprint/issues/1122)) ([90a6cc1](https://github.com/wmfs/care-quality-commission-blueprint/commit/90a6cc115cd00521fe0482d334c49d83faa56870))
+* **deps:** revert chai to non-esm ([6a71167](https://github.com/wmfs/care-quality-commission-blueprint/commit/6a71167529b171b4cdb0a83301b5dc6258cc43a6))
+
 ## [1.16.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.15.0...v1.16.0) (2025-07-18)
 
 ### Build system dependencies :hammer:
