@@ -1,3 +1,5 @@
+## [1.17.1](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.17.0...v1.17.1) (2026-08-12)
+
 ## [1.17.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.16.0...v1.17.0) (2025-10-21)
 
 ### Build system dependencies :hammer:
