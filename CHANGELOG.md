@@ -1,3 +1,28 @@
+## [1.18.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.17.1...v1.18.0) (2026-10-30)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** fix conventionalcommit versions [sc-34125] ([877953c](https://github.com/wmfs/care-quality-commission-blueprint/commit/877953c3ecf484d51e1ce9b2a8ffb7f48bb0c5bb))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#1170](https://github.com/wmfs/care-quality-commission-blueprint/issues/1170)) ([073233e](https://github.com/wmfs/care-quality-commission-blueprint/commit/073233e06e3ef65479eb7a078da0c18e6bc0f38b))
+* **deps-dev:** update dependency @wmfs/tymly to v1.317.1 ([#1154](https://github.com/wmfs/care-quality-commission-blueprint/issues/1154)) ([48c1691](https://github.com/wmfs/care-quality-commission-blueprint/commit/48c1691d1221f9f7662096163005ac9fb6297fff))
+* **deps-dev:** update dependency @wmfs/tymly-cardscript-plugin to v1.53.1 ([#1155](https://github.com/wmfs/care-quality-commission-blueprint/issues/1155)) ([6e222d2](https://github.com/wmfs/care-quality-commission-blueprint/commit/6e222d20ff4be568981134f6f8e5bceea4453473))
+* **deps-dev:** update dependency @wmfs/tymly-etl-plugin to v1.189.1 ([#1156](https://github.com/wmfs/care-quality-commission-blueprint/issues/1156)) ([42713d5](https://github.com/wmfs/care-quality-commission-blueprint/commit/42713d58d579d360bbd8f9f60f9a17a56cf69bf6))
+* **deps-dev:** update dependency @wmfs/tymly-pg-plugin to v1.348.1 ([#1157](https://github.com/wmfs/care-quality-commission-blueprint/issues/1157)) ([af285a8](https://github.com/wmfs/care-quality-commission-blueprint/commit/af285a852e8336e9104210ece5eae446481ceb37))
+* **deps-dev:** update dependency @wmfs/tymly-test-helpers to v1.24.1 ([#1158](https://github.com/wmfs/care-quality-commission-blueprint/issues/1158)) ([7f2c2dc](https://github.com/wmfs/care-quality-commission-blueprint/commit/7f2c2dc7ade585104a2e025530d879289bf25d09))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#1159](https://github.com/wmfs/care-quality-commission-blueprint/issues/1159)) ([6aabf4b](https://github.com/wmfs/care-quality-commission-blueprint/commit/6aabf4b107241159e383c1c9d2acf76dd2cd9361))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.1 ([#1168](https://github.com/wmfs/care-quality-commission-blueprint/issues/1168)) ([4fa3898](https://github.com/wmfs/care-quality-commission-blueprint/commit/4fa38986c01dcbba1b7c58d7bc6e4205962938f7))
+* **deps-dev:** update dependency mocha to v12 ([#1160](https://github.com/wmfs/care-quality-commission-blueprint/issues/1160)) ([30a824c](https://github.com/wmfs/care-quality-commission-blueprint/commit/30a824cfebd9c76ce1460a0ebb789b4d1c6b1dd7))
+* **deps-dev:** update dependency mocha to v12.0.1 ([#1163](https://github.com/wmfs/care-quality-commission-blueprint/issues/1163)) ([566d647](https://github.com/wmfs/care-quality-commission-blueprint/commit/566d647bc09f805d539e73f845674ff779e27db0))
+* **deps-dev:** update dependency mocha to v12.0.2 ([#1165](https://github.com/wmfs/care-quality-commission-blueprint/issues/1165)) ([a7d914d](https://github.com/wmfs/care-quality-commission-blueprint/commit/a7d914d8a6a4e673ab72836a34c56c3eb156855a))
+* **deps-dev:** update dependency mocha to v12.0.3 ([#1166](https://github.com/wmfs/care-quality-commission-blueprint/issues/1166)) ([fd80239](https://github.com/wmfs/care-quality-commission-blueprint/commit/fd8023992345c1ce6920d87f6ce250fcdb1de032))
+* **deps:** Add missing dependencies [sc-33852] ([#1167](https://github.com/wmfs/care-quality-commission-blueprint/issues/1167)) ([334e132](https://github.com/wmfs/care-quality-commission-blueprint/commit/334e132119d9ba1ee00f0b46c0b11dbd1f5cb995))
+* **deps:** update dependency csv-parse to v7 [security] ([#1162](https://github.com/wmfs/care-quality-commission-blueprint/issues/1162)) ([fd7c789](https://github.com/wmfs/care-quality-commission-blueprint/commit/fd7c7891a3498b628fbaa1f83e49d460227875aa))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#1171](https://github.com/wmfs/care-quality-commission-blueprint/issues/1171)) ([2022651](https://github.com/wmfs/care-quality-commission-blueprint/commit/2022651aca72a74b6778b9f9ddaf908ae1584999))
+* use shared renovate preset [sc-34117] ([#1169](https://github.com/wmfs/care-quality-commission-blueprint/issues/1169)) ([a5d2137](https://github.com/wmfs/care-quality-commission-blueprint/commit/a5d21371c229799e4ffa81588a935e64adbf9ea2))
+
 ## [1.17.1](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.17.0...v1.17.1) (2026-08-12)
 
 ## [1.17.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.16.0...v1.17.0) (2025-10-21)
