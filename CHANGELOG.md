@@ -1,3 +1,10 @@
+## [1.19.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.18.0...v1.19.0) (2026-11-02)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update dependency @wmfs/tymly-cardscript-plugin to v1.54.0 ([#1172](https://github.com/wmfs/care-quality-commission-blueprint/issues/1172)) ([22da7e1](https://github.com/wmfs/care-quality-commission-blueprint/commit/22da7e159d97b2ef01274d865b98e2d7f43a8a25))
+* **deps:** update dependency csv-parse to v7.0.3 ([#1173](https://github.com/wmfs/care-quality-commission-blueprint/issues/1173)) ([d7dd3a9](https://github.com/wmfs/care-quality-commission-blueprint/commit/d7dd3a957eb71b069ac03869ca0d933451ccb30b))
+
 ## [1.18.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.17.1...v1.18.0) (2026-10-30)
 
 ### Build system dependencies :hammer:
