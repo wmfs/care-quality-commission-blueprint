@@ -1,4 +1,4 @@
-const xslx = require('xlsx')
+const xslx = require('@e965/xlsx') // SheetJS, now published on npm as @e965/xlsx
 const path = require('path')
 const createCsvWriter = require('csv-writer').createObjectCsvWriter
 
