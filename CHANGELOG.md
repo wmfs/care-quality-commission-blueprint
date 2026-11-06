@@ -1,3 +1,12 @@
+## [1.20.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.19.0...v1.20.0) (2026-11-06)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#1174](https://github.com/wmfs/care-quality-commission-blueprint/issues/1174)) ([a4c512d](https://github.com/wmfs/care-quality-commission-blueprint/commit/a4c512d174f74940f8b6b727c0b3e068b35cbc18))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#1175](https://github.com/wmfs/care-quality-commission-blueprint/issues/1175)) ([4e1befb](https://github.com/wmfs/care-quality-commission-blueprint/commit/4e1befb57d5389abcbfd5d67a050ae9960e5e25b))
+* **deps-dev:** update [@wmfs](https://github.com/wmfs) packages ([#1176](https://github.com/wmfs/care-quality-commission-blueprint/issues/1176)) ([e87137f](https://github.com/wmfs/care-quality-commission-blueprint/commit/e87137f8d1bb64566742c659e31170d593b7a876))
+* **deps:** replace dependency xlsx with @e965/xlsx 0.20.3 ([#1164](https://github.com/wmfs/care-quality-commission-blueprint/issues/1164)) ([761d3af](https://github.com/wmfs/care-quality-commission-blueprint/commit/761d3afd167c8829dda994368b209b4b9d4f3e8f))
+
 ## [1.19.0](https://github.com/wmfs/care-quality-commission-blueprint/compare/v1.18.0...v1.19.0) (2026-11-02)
 
 ### Build system dependencies :hammer:
